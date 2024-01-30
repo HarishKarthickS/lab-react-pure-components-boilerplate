@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
-import SimpleCounterComponent from './Pure-component/src/Component/SimpleCounterComponent'
-import PureCounterComponent from './Pure-component/src/Component/PureCOunterComponent'
+import SimpleCounterComponent from './Component/SimpleCounterComponent'
+import PureCounterComponent from './Component/PureCOunterComponent'
 
 function App() {
   return (
