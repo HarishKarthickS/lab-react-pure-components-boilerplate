@@ -1,13 +1,15 @@
-import './App.css'
-import React from 'react'
-import SimpleCounterComponent from './Component/SimpleCounterComponent'
+import { useState } from 'react'
 import PureCounterComponent from './Component/PureCounterComponent'
+import SimpleCounterComponent from './Component/SimpleCounterComponent'
+import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <>
-      <SimpleCounterComponent />
-      <PureCounterComponent />
+      <PureCounterComponent/>
+      <SimpleCounterComponent/>
     </>
   )
 }
