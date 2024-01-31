@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import PureCounterComponent from './Component/PureCounterComponent'
+import PureCounterComponent from './Component/PureCounterCOmponent'
 
 import SimpleCounterComponent from './Component/SimpleCounterComponent'
 import './App.css'
