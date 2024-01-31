@@ -22,12 +22,22 @@ class PureCounterComponent extends PureComponent {
     render() {
 
         let { count, toggle } = this.state
+        var changeStyle = null;
+        if(toggle){
+            changeStyle ={
+                backgroundColor : "green"
+            }
+        }else{
+            changeStyle ={
+                backgroundColor : "red"
+            }
+        }
         console.log("pure", count)
         return (
             <>
             <h1>pure component</h1>
                 <h3>count : {count}</h3>
-                <button onClick={this.toggling}>Set toggle</button>
+                <button style={changeStyle}  onClick={this.toggling}>Set toggle</button>
                 <button onClick={this.incrementCount}>counter</button>
 
             </>
